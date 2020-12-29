@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+/* MY CSS */
+
+.crypto-container {
+  display: flex;
+  justify-content: center;
+
+}
+
+.crypto-row {
+  display: flex;
+  flex-direction: row;
+  
+}
