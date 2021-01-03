@@ -31,7 +31,7 @@ function App() {
   return (
     <div className="crypto-tracker">
       <div className="crypto-search">
-        <h1 className="crypto-search">Eds Crypto Tracker</h1>
+        <h1 className="crypto-search">Eds Cryptorium</h1>
         <form>
           <input
             type="text"
@@ -40,6 +40,12 @@ function App() {
             onChange={handleChange}
           />
         </form>
+      </div>
+      <div id='cowellereum'>
+        <p>
+          Check out the code for my cryptocurrency - 'Cowellereum':{" "}
+          <a href="https://github.com/Steddyeu/cowellereum-coin">₿</a>
+        </p>
       </div>
       {filteredCoins.map((coin) => {
         return (
@@ -61,4 +67,3 @@ function App() {
 
 export default App;
 
-//https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false

@@ -30,6 +30,7 @@ export default function CryptoCoins({
               {priceChange /*.toFixed(2)*/}%
             </p>
           )}
+          
           <p className="marketcap">
             Crypto volume: {totalVolume.toLocaleString()}
           </p>
@@ -38,3 +39,5 @@ export default function CryptoCoins({
     </div>
   );
 }
+
+ 
