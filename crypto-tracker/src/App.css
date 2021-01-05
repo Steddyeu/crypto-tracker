@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 body {
-  background: linear-gradient(to right, #1e3c72, #2a5298);
+  background: linear-gradient(to right, #6d9aee, #2a5298);
   color: aliceblue;
   box-sizing: border-box;
   margin: 0;
@@ -44,7 +44,7 @@ body {
   height: 50px;
   border-radius: 4px;
   border: none;
-  background-color: rgb(32, 11, 27);
+  background-color: rgb(11, 11, 51);
   outline: none;
 }
 
@@ -106,6 +106,7 @@ body {
   height: 30px;
   width: 30px;
   margin-right: 10px;
+  padding-left: 5px;
 }
 
 .symbol {
@@ -141,3 +142,5 @@ body {
 .green {
   color: green;
 }
+
+
