@@ -1,5 +1,5 @@
 # Eds Cryptorium
-cd into crypto-tracker and run the command ```npm-start``` run command: ```npm install axios in terminal```.
+cd into crypto-tracker and run the command ```npm-start``` run command: ```npm install axios``` in terminal.
 
 # This project
 This project is a live cryptocurrency tracker making get request from CoinGeckos api. Link: https://www.coingecko.com/en/api
