@@ -8,15 +8,6 @@ function App() {
 
   const [search, setSearch] = useState("");
 
-
-const formattedCoins = coins.map((coin) => {
-  // console.log(coin.price_change_percentage_24h)
-  if (coin.price_change_percentage_24h === null) {
-    coin.price_change_percentage_24h = 0
-  }
-  return coin
-})
-
   useEffect(() => {
     axios
       .get(
@@ -28,6 +19,14 @@ const formattedCoins = coins.map((coin) => {
       })
       .catch((err) => console.log(err));
   }, []);
+
+  const formattedCoins = coins.map((coin) => {
+    // console.log(coin.price_change_percentage_24h)
+    if (coin.price_change_percentage_24h === null) {
+      coin.price_change_percentage_24h = 0
+    }
+    return coin
+  })
 
   const handleChange = (event) => {
     setSearch(event.target.value);
