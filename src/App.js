@@ -8,6 +8,15 @@ function App() {
 
   const [search, setSearch] = useState("");
 
+
+const formattedCoins = coins.map((coin) => {
+  // console.log(coin.price_change_percentage_24h)
+  if (coin.price_change_percentage_24h === null) {
+    coin.price_change_percentage_24h = 0
+  }
+  return coin
+})
+
   useEffect(() => {
     axios
       .get(
@@ -24,8 +33,8 @@ function App() {
     setSearch(event.target.value);
   };
 
-  const filteredCoins = coins.filter((coin) =>
-    coin.name.toLowerCase().includes(search.toLocaleLowerCase()) 
+  const filteredCoins = formattedCoins.filter((formattedCoin) =>
+    formattedCoin.name.toLowerCase().includes(search.toLocaleLowerCase()) 
   );
 
   return (
