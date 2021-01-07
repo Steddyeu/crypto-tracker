@@ -43,7 +43,7 @@ const formattedCoins = coins.map((coin) => {
         <h1 className="crypto-search">Eds Cryptorium</h1>
         <form>
           <input
-            type="text"
+            type="text"Ÿ
             placeholder="search here..."
             className="search-input"
             onChange={handleChange}
