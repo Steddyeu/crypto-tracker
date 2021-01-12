@@ -2,10 +2,13 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
 import CryptoCoins from "./components/CryptoCoins";
+import CoinInfo from "./components/CoinInfo";
+import Watchlist from "./components/Watchlist";
+import {BrowserRouter, Route} from 'react-router-dom';
+
 
 function App() {
   const [coins, setCoins] = useState([]);
-
   const [search, setSearch] = useState("");
 
   useEffect(() => {
@@ -42,7 +45,7 @@ function App() {
         <h1 className="crypto-search">Eds Cryptorium</h1>
         <form>
           <input
-            type="text"Ÿ
+            type="text"
             placeholder="search here..."
             className="search-input"
             onChange={handleChange}
@@ -55,6 +58,10 @@ function App() {
           <a href="https://github.com/Steddyeu/cowellereum-coin">₿</a>
         </p>
       </div>
+<BrowserRouter>
+<Route exact path='/' component={CoinInfo}/>
+</BrowserRouter>
+
       {filteredCoins.map((coin) => {
         return (
           <CryptoCoins
