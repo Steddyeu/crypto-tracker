@@ -6,6 +6,7 @@ import CoinInfo from "./components/CoinInfo";
 import Watchlist from "./components/Watchlist";
 import {BrowserRouter, Route} from 'react-router-dom';
 import Header from "./components/Header";
+import CoinWatchList from "./components/CoinWatchList";
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
   return (
     <div className="crypto-tracker">
       <Header />
+      <CoinWatchList />
       <div className="crypto-search">
         <form>
           <input
@@ -70,10 +72,8 @@ function App() {
             name={coin.name}
             image={coin.image}
             symbol={coin.symbol}
-            marketCap={coin.market_cap}
             price={coin.current_price}
             priceChange={coin.price_change_percentage_24h}
-            totalVolume={coin.total_volume}
           />
         );
       })}

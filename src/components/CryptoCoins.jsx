@@ -5,9 +5,7 @@ export default function CryptoCoins({
   name,
   symbol,
   price,
-  marketCap,
   priceChange,
-  totalVolume,
 }) {
 
   return (
@@ -20,10 +18,7 @@ export default function CryptoCoins({
         </div>
         <div className="crypto-data">
           <p className="crypto-price">${price} USD</p>
-          <p className="crypto-volume">
-            
-            Mkt Cap: ${marketCap.toLocaleString()}
-          </p>
+         
           {priceChange < 0 ? (
             <p className="crypto-percent red">{priceChange.toFixed(2)}%</p>
           ) : (
@@ -32,9 +27,6 @@ export default function CryptoCoins({
             </p>
           )}
           
-          <p className="marketcap">
-            Crypto volume: {totalVolume.toLocaleString()}
-          </p>
         </div>
       </div>
     </div>
