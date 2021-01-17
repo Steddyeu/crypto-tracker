@@ -10,23 +10,7 @@ body {
   width: 100%;
 }
 
-.crypto-tracker {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 64px;
-}
-
-.crypto-search {
-  margin-bottom: 64px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.crypto-search h1 {
+.header {
   font-size: 100px;
   background: linear-gradient(90deg, #eef2f3, #8aa3ad);
   text-shadow: none;
@@ -36,6 +20,22 @@ body {
   background-clip: text;
   border-color: white;
 }
+
+.crypto-tracker {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 64px;
+}
+
+.crypto-search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .search-input {
   color: rgb(240, 236, 236);

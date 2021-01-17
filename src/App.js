@@ -5,6 +5,7 @@ import CryptoCoins from "./components/CryptoCoins";
 import CoinInfo from "./components/CoinInfo";
 import Watchlist from "./components/Watchlist";
 import {BrowserRouter, Route} from 'react-router-dom';
+import Header from "./components/Header";
 
 
 function App() {
@@ -41,8 +42,8 @@ function App() {
 
   return (
     <div className="crypto-tracker">
+      <Header />
       <div className="crypto-search">
-        <h1 className="crypto-search">Eds Cryptorium</h1>
         <form>
           <input
             type="text"
