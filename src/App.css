@@ -36,7 +36,6 @@ body {
   align-items: center;
 }
 
-
 .search-input {
   color: rgb(240, 236, 236);
   padding-left: 16px;
@@ -75,6 +74,7 @@ body {
   justify-content: center;
   border-radius: 10px;
   margin-bottom: 10px;
+  transition: all 0.3s ease;
 }
 
 .crypto-row {
@@ -88,6 +88,18 @@ body {
   background-color: rgb(18, 11, 78);
   justify-content: space-evenly;
   border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.crypto-container:hover {
+  border: solid;
+  border-width: 1px;
+  transition: all 0.3s ease;
+}
+
+.crypto-row:hover {
+  background-color: rgb(24, 14, 110);
+  transition: all 0.3s ease;
 }
 
 .crypto {
@@ -160,4 +172,3 @@ body {
   margin-right: 100px;
 }
 } */
-

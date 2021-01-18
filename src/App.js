@@ -2,13 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
 import CryptoCoins from "./components/CryptoCoins";
-import CoinInfo from "./components/CoinInfo";
-import Watchlist from "./components/Watchlist";
-import {BrowserRouter, Route} from 'react-router-dom';
+// import {BrowserRouter, Route} from 'react-router-dom';
 import Header from "./components/Header";
-import CoinWatchList from "./components/CoinWatchList";
-
-
 function App() {
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState("");
@@ -43,8 +38,7 @@ function App() {
 
   return (
     <div className="crypto-tracker">
-      <Header />
-      <CoinWatchList />
+    <Header />
       <div className="crypto-search">
         <form>
           <input
@@ -61,10 +55,7 @@ function App() {
           <a href="https://github.com/Steddyeu/cowellereum-coin">₿</a>
         </p>
       </div>
-<BrowserRouter>
-<Route exact path='/' component={CoinInfo}/>
-</BrowserRouter>
-
+    
       {filteredCoins.map((coin) => {
         return (
           <CryptoCoins

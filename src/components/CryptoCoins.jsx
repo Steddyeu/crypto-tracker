@@ -23,7 +23,7 @@ export default function CryptoCoins({
             <p className="crypto-percent red">{priceChange.toFixed(2)}%</p>
           ) : (
             <p className="crypto-percent green">
-                {priceChange.toFixed(2)}%
+                + {priceChange.toFixed(2)}%
             </p>
           )}
           
