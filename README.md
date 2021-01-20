@@ -13,5 +13,5 @@ Within the next week i intend to add a newsfeed to the page where in conjunction
 # Cowellereum
 I have also added a link to my node.js project cowellereum in which i make my own (very very basic) cryptocurrency.
 
-# Planned improvements by 11/01/2021
-Top movers table. Trending news feed. List of crypto evens, filtered down to local area.
+# Planned improvements 
+Top movers table. Trending news feed. List of crypto events, filtered down to local area. Charts showing performance grpahs of each coin. 
