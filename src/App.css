@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Play&family=Staatliches&display=swap");
 
 body {
-  background: linear-gradient(to right, #6d9aee, #2a5298);
-  color: aliceblue;
+  background-color: rgb(3, 47, 241);
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -12,13 +12,8 @@ body {
 
 .header {
   font-size: 100px;
-  background: linear-gradient(90deg, #eef2f3, #8aa3ad);
-  text-shadow: none;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-box-decoration-break: clone;
-  background-clip: text;
-  border-color: white;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(196, 199, 196);
 }
 
 .crypto-tracker {
@@ -26,7 +21,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 64px;
 }
 
 .crypto-search {
@@ -57,7 +51,7 @@ body {
   outline: none;
   text-decoration: none;
   color: grey;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 #cowellereum a:hover {
@@ -65,7 +59,7 @@ body {
   outline: none;
   text-decoration: none;
   color: gold;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 /* CryptoCoins.jsx */
@@ -94,12 +88,12 @@ body {
 .crypto-container:hover {
   border: solid;
   border-width: 1px;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 .crypto-row:hover {
   background-color: rgb(24, 14, 110);
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 .crypto {
