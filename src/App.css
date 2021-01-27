@@ -10,6 +10,12 @@ body {
   width: 100%;
 }
 
+.links {
+  outline: none;
+  text-decoration: none;
+  color: azure;
+}
+
 .header {
   font-size: 100px;
   font-family: "Open Sans", sans-serif;

@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
+//import * as api from "./apiReq";
 import axios from "axios";
 import CryptoCoins from "./components/CryptoCoins";
-// import {BrowserRouter, Route} from 'react-router-dom';
+// import { Router } from "@reach/router";
 import Header from "./components/Header";
+
 function App() {
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState("");
