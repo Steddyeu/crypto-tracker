@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Play&family=Staatliches&display=swap");
 
+
+*{
+text-decoration: none;
+}
+
 body {
   background-color: rgb(3, 47, 241);
   box-sizing: border-box;
@@ -19,7 +24,7 @@ body {
 .header {
   font-size: 100px;
   font-family: "Open Sans", sans-serif;
-  color: rgb(196, 199, 196);
+  color: rgb(255, 255, 255);
 }
 
 .crypto-tracker {
@@ -89,6 +94,7 @@ body {
   justify-content: space-evenly;
   border-radius: 10px;
   transition: all 0.3s ease;
+  color: aliceblue;
 }
 
 .crypto-container:hover {
@@ -172,3 +178,7 @@ body {
   margin-right: 100px;
 }
 } */
+
+
+/* Individual coin container */
+
