@@ -55,7 +55,7 @@ export default function CryptoCoins() {
 
       {filteredCoins.map((crypto) => {
         return (
-          <Link to={`/${crypto.id}`}>
+          <Link to={`/coins/${crypto.id}`}>
           <div className='crypto-container'>
           <div className="crypto-row">
             <div className="crypto">

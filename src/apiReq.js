@@ -12,9 +12,10 @@ export const getAllCoins = () => {
 };
 
 export const getCoinChart = (coin) => {
+  console.log(coin)
   return axios
     .get(
-      `https://api.coingecko.com/api/v3/coins/bitcoin/market_chart`
+      `https://api.coingecko.com/api/v3/coins/${coin}/market_chart?vs_currency=usd&days=7`
     )
     .then((res) => {
       console.log('chart info--->', res.data)

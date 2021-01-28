@@ -182,3 +182,9 @@ body {
 
 /* Individual coin container */
 
+.home-button{
+  padding: 5px 5px 5px 5px;
+  border-radius: 40px;
+  background-color: rgb(116, 84, 5);
+  outline: none;
+}
