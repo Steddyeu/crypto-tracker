@@ -12,7 +12,7 @@ export default function IndividualCoin() {
     api
       .getCoinChart(id)
       .then((res) => {
-        console.log(coin)
+        console.log('==>', coin.id)
         console.log(res);
         setChartData(res);
       })
