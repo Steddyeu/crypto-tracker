@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Play&family=Staatliches&display=swap");
 
-
-*{
-text-decoration: none;
+* {
+  text-decoration: none;
 }
 
 body {
@@ -13,6 +12,7 @@ body {
   padding: 0;
   font-family: "Roboto", sans-serif;
   width: 100%;
+  text-align: center;
 }
 
 .links {
@@ -154,34 +154,73 @@ body {
   color: green;
 }
 
-/* @media screen and (max-width: 705px) {
-  
+@media screen and (max-width: 748px) {
+  .header {
+    font-size: 3.1em;
+  }
+
+  #cowellereum {
+    font-size: 0.8em;
+  }
+
   .crypto-row {
-  width: 100%;
+    width: 29em;
+    margin-left: 5em;
+  }
+
+  .crypto {
+    padding-right: 5em;
+    min-width: 9em;
+  }
+
+  .crypto h1 {
+    font-size: 20px;
+    width: 9em;
+  }
+
+  .crypto img {
+    height: 30px;
+    width: 2em;
+    margin-right: 0.1em;
+    padding-left: 1em;
+  }
+
+  .crypto-price {
+    margin-right: 0.5em;
+    width: 9em;
+  }
+
+  .symbol {
+    margin-left: 1em;
+    align-items: center;
+  }
 }
+@media screen and (max-width: 369px) {
+  .header {
+    font-size: 2.3em;
+  }
 
-.crypto-percent {
- margin-right: 10px;
+  .crypto-search {
+    margin-left: 3em;
+  }
+
+  #cowellereum {
+    font-size: 0.6em;
+  }
+
+  .crypto-price {
+    margin-right: 0.1em;
+    width: 5em;
+  }
+
+  .crypto-row {
+    width: 22.4em;
+    margin-left: 5em;
+  }
 }
+/*Individual coin container */
 
-.crypto h1 {
- display: none;
-}
-
-.crypto img {
- margin-right: -100px;
-}
-
-.crypto-price {
-  width: 0px;
-  margin-right: 100px;
-}
-} */
-
-
-/* Individual coin container */
-
-.home-button{
+.home-button {
   padding: 5px 5px 5px 5px;
   border-radius: 40px;
   background-color: rgb(116, 84, 5);
