@@ -3,6 +3,7 @@
 
 * {
   text-decoration: none;
+  outline: none;
 }
 
 body {
@@ -49,7 +50,6 @@ body {
   border-radius: 40px;
   border: none;
   background-color: rgb(11, 11, 51);
-  outline: none;
 }
 
 #cowellereum {
@@ -225,4 +225,9 @@ body {
   border-radius: 40px;
   background-color: rgb(116, 84, 5);
   outline: none;
+}
+
+.individual-coin-header {
+  color: white;
+  text-transform: capitalize;
 }
