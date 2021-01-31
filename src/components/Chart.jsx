@@ -6,7 +6,7 @@ import chartOptions from '../config/chartConfig'
 
 export default function Chart({data}) {
   const chartRef = useRef()
-console.log('--->',data)
+//console.log('--->',data)
   useEffect(() => {
 if(chartRef && chartRef.current) {
   const chartInstance = new Chartjs(chartRef.current, {
@@ -22,19 +22,19 @@ if(chartRef && chartRef.current) {
       }]
     },
 
-    options: chartOptions,
+    options: {
+      ...chartOptions,
+    }
   });
 }
   })
 
   return (
-    <div style={{ alignItems: 'center', width: '500px', height: '500px'}}>
-    <div style={{background: 'white', width:'100%', height: '100%'}}>
+    <div className='chart-container'>
 
     <div>
       <canvas ref={chartRef} className='chart' width={200} height={200}>
       </canvas>
-    </div>
     </div>
     </div>
   )

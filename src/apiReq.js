@@ -11,6 +11,7 @@ export const getAllCoins = () => {
     });
 };
 
+
 export const getCoinChartDay = (coin) => {
   console.log(coin);
   return axios
@@ -27,7 +28,7 @@ export const getCoinChartDay = (coin) => {
 };
 
 export const getCoinChartWeek = (coin) => {
-  console.log(coin);
+ // console.log(coin);
   return axios
     .get(`https://api.coingecko.com/api/v3/coins/${coin}/market_chart`, {
       params: {

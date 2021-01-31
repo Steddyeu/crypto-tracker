@@ -124,7 +124,7 @@ body {
   height: 30px;
   width: 30px;
   margin-right: 10px;
-  padding-left: 5px;
+  padding-left: 3em;
 }
 
 .symbol {
@@ -221,13 +221,61 @@ body {
 /*Individual coin container */
 
 .home-button {
-  padding: 5px 5px 5px 5px;
-  border-radius: 40px;
-  background-color: rgb(116, 84, 5);
-  outline: none;
+ color: rgb(197, 190, 190);
 }
 
 .individual-coin-header {
   color: white;
   text-transform: capitalize;
+  align-items: center;
+  font-size: 3em;
+}
+
+.individial-coin-container {
+ align-items: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+.individual-coin-info{
+  border: solid;
+  border-color: black;
+  border-radius: 40px;
+  width: 80vw;
+  color: aliceblue;
+  background-color: rgb(18, 11, 78);
+}
+
+/* CHART.JSX */
+.chart-container{
+background: white;
+ width:40em; 
+ height: 40em;
+ border-radius:40px;
+  border: solid;
+  margin-bottom: 2em;
+  /* padding: 2em; */
+}
+
+
+@media screen and (max-width: 647px) {
+  .chart-container{
+ width:23em; 
+ height: 23em;
+ border-radius:40px;
+
+}
+}
+
+@media screen and (max-width: 380px) {
+  .chart-container{
+background: white;
+ width:18em; 
+ height: 18em;
+ border-radius:40px;
+  border: solid;
+  margin-bottom: 2em;
+  /* padding: 2em; */
+}
 }
