@@ -6,18 +6,20 @@ import chartOptions from '../config/chartConfig'
 
 export default function Chart({data}) {
   const chartRef = useRef()
-//console.log('--->',data)
+const {day, week, year, detail} = data
+
+
   useEffect(() => {
 if(chartRef && chartRef.current) {
   const chartInstance = new Chartjs(chartRef.current, {
     type: 'line',
     data: {
       datasets: [{
-        label: 'Crypto Chart',
-        data: data,
-        backgroundColor: 'grey',
-        borderColor: 'green',
-        pointRadius: '3',
+        label: "crypto",
+        data: year,
+        backgroundColor: 'gold',
+        borderColor: 'orange',
+        pointRadius: '1',
         borderWidth: 1
       }]
     },

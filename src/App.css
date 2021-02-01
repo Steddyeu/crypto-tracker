@@ -221,7 +221,7 @@ body {
 /*Individual coin container */
 
 .home-button {
- color: rgb(197, 190, 190);
+  color: rgb(197, 190, 190);
 }
 
 .individual-coin-header {
@@ -232,13 +232,13 @@ body {
 }
 
 .individial-coin-container {
- align-items: center;
- display: flex;
- flex-direction: column;
- justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.individual-coin-info{
+.individual-coin-info {
   border: solid;
   border-color: black;
   border-radius: 40px;
@@ -247,35 +247,36 @@ body {
   background-color: rgb(18, 11, 78);
 }
 
+.individual-coin-info p {
+  padding: 5px;
+}
 /* CHART.JSX */
-.chart-container{
-background: white;
- width:40em; 
- height: 40em;
- border-radius:40px;
+.chart-container {
+  background: white;
+  width: 40em;
+  height: 40em;
+  border-radius: 40px;
   border: solid;
   margin-bottom: 2em;
   /* padding: 2em; */
 }
 
-
 @media screen and (max-width: 647px) {
-  .chart-container{
- width:23em; 
- height: 23em;
- border-radius:40px;
-
-}
+  .chart-container {
+    width: 23em;
+    height: 23em;
+    border-radius: 40px;
+  }
 }
 
 @media screen and (max-width: 380px) {
-  .chart-container{
-background: white;
- width:18em; 
- height: 18em;
- border-radius:40px;
-  border: solid;
-  margin-bottom: 2em;
-  /* padding: 2em; */
-}
+  .chart-container {
+    background: white;
+    width: 18em;
+    height: 18em;
+    border-radius: 40px;
+    border: solid;
+    margin-bottom: 2em;
+    /* padding: 2em; */
+  }
 }
