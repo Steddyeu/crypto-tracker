@@ -13,10 +13,10 @@ export default function IndividualCoin() {
 console.log(coin.id)
 
   const formatData = (data) => {
-    return data.map((el) => {
+    return data.map((row) => {
       return {
-        t: el[0],
-        y: el[1].toFixed(2),
+        t: row[0],
+        y: row[1].toFixed(2),
       };
     });
   };
@@ -62,29 +62,6 @@ console.log(coin.id)
 
     fetchData();
   }, []);
-
-  // const coin = useParams();
-  // const formatChartData = (data) => {
-  //   return data.map((d) => {
-  //     return {
-  //       t: d[0].toFixed(2),
-  //       y: d[1].toFixed(2),
-  //     };
-  //   });
-  // };
-
-  // useEffect(() => {
-  //   const id = coin.id;
-  //   api
-  //     .getCoinChartYear(id)
-  //     .then((year) => {
-  //       // console.log("==>", coin.id);
-  //       console.log(formatChartData(year));
-  //       setChartData(year);
-  //     })
-
-  //     .catch((err) => console.log(err));
-  // }, []);
 
   return (
     <div className="individial-coin-container">

@@ -11,12 +11,3 @@ export const getAllCoins = () => {
     });
 };
 
-
-// export const getCoinChartData = () => {
-//   return axios
-//     .get(`https://api.coingecko.com/api/v3/coins`)
-//     .then((res) => {
-//     // console.log("chart info--->", res.data.prices);
-//       return res;
-//     });
-// };
