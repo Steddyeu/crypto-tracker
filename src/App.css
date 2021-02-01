@@ -237,7 +237,9 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-
+.individial-coin-container p {
+ color: rgb(182, 179, 179);
+}
 .individual-coin-info {
   border: solid;
   border-color: black;
@@ -258,7 +260,7 @@ body {
   border-radius: 40px;
   border: solid;
   margin-bottom: 2em;
-  /* padding: 2em; */
+  padding-bottom: 1.6em;
 }
 
 @media screen and (max-width: 647px) {

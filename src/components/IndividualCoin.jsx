@@ -4,13 +4,15 @@ import * as api from "../apiReq";
 import { Link } from "@reach/router";
 import Chart from "./Chart";
 import axios from "axios";
+import commaNumber from "comma-number";
+import Table from "./Table";
 
 
 
 export default function IndividualCoin() {
   const [chartData, setChartData] = useState({});
   const coin  = useParams();
-console.log(coin.id)
+// console.log(coin.id)
 
   const formatData = (data) => {
     return data.map((row) => {
@@ -49,9 +51,9 @@ console.log(coin.id)
           },
         }),
       ]);
-      console.log('day--->',day);
-      console.log('week--->', week);
-      console.log('year--->', year);
+      // console.log('day--->',day);
+      // console.log('week--->', week);
+      // console.log('year--->', year);
       setChartData({
         day: formatData(day.data.prices),
         week: formatData(week.data.prices),
@@ -63,18 +65,13 @@ console.log(coin.id)
     fetchData();
   }, []);
 
+  //const price = chartData.detail.current_price
+
   return (
     <div className="individial-coin-container">
       <h1 className="individual-coin-header">{coin.id} performance chart</h1>
       <Chart data={chartData} />
-      <div className="individual-coin-info">
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio illo
-          odit impedit, quod temporibus eum a repellendus ad cupiditate
-          dignissimos dolorem officiis ex ea, magnam sint neque adipisci itaque
-          aperiam?
-        </p>
-      </div>
+      <Table details={chartData.detail}/>
       <Link to={`/`}>
         <h2 className="home-button">Back</h2>
       </Link>
