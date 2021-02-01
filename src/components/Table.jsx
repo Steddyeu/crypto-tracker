@@ -1,24 +1,62 @@
-import React from 'react'
+import React from "react";
 
 export default function Table(props) {
-//console.log(props.details)
-/*
-max_supply 
-market_cap
-circulating_supply
-total_volume
-high_24h
-low_24h
-*/
+// console.log(props.tableData.name)
 
   return (
     <div className="individual-coin-info">
-        <p>Total Volume</p>
-      <p>Circulating Supply</p>
-      <p>Max Supply</p>
-      <p>Market Cap</p>
-      <p>24hr High</p>
-      <p>24hr Low</p>
+      
+      
     </div>
-  )
+  );
 }
+
+
+
+
+
+/*
+   <div className="individual-coin-info">
+      <div className="table-row">
+        <h2>Total Volume</h2>
+        <p>${props.tableData.total_volume}</p>
+        <h2>Circulating Supply</h2>
+        <p>{props.tableData.circulating_supply}</p>
+        <h2>Max Supply</h2>
+        <p>{props.tableData.max_supply}</p>
+      </div>
+      <div className="table-row">
+        <h2>Market Cap</h2>
+        <p>${props.tableData.market_cap}</p>
+        <h2>24hr High</h2>
+        <p>${props.tableData.high_24h}</p>
+        <h2>24hr Low</h2>
+        <p>${props.tableData.low_24h}</p>
+      </div>
+</div>
+*/
+
+
+/*
+ <div className="individual-coin-info">
+      <div className="table-row">
+        <h2>Total Volume</h2>
+        <p>testing here</p>
+        <h2>Circulating Supply</h2>
+        <p>testing here</p>
+      </div>
+      <div className="table-row">
+        <h2>Max Supply</h2>
+        <p>testing here</p>
+        <h2>Market Cap</h2>
+        <p>testing here</p>
+      </div>
+      <div className="table-row">
+        <h2>24hr High</h2>
+        <p>testing here</p>
+        <h2>24hr Low</h2>
+        <p>testing here</p>
+      </div>
+    </div>
+
+*/

@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "@reach/router";
-import * as api from "../apiReq";
 import { Link } from "@reach/router";
 import Chart from "./Chart";
 import axios from "axios";
-import commaNumber from "comma-number";
-import Table from "./Table";
 
 
 
@@ -65,13 +62,11 @@ export default function IndividualCoin() {
     fetchData();
   }, []);
 
-  //const price = chartData.detail.current_price
 
   return (
     <div className="individial-coin-container">
       <h1 className="individual-coin-header">{coin.id} performance chart</h1>
       <Chart data={chartData} />
-      <Table details={chartData.detail}/>
       <Link to={`/`}>
         <h2 className="home-button">Back</h2>
       </Link>

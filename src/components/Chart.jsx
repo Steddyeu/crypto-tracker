@@ -1,22 +1,24 @@
 import React, { useRef, useEffect, useState } from "react";
 import Chartjs from "chart.js";
 import chartOptions from "../config/chartConfig";
+import Table from '../components/Table'
+
 
 export default function Chart({ data }) {
   const [timeFrame, setTimeFrame] = useState("24h");
   const chartRef = useRef();
-  const { day, week, year, detail } = data;
+  const {year, detail } = data;
 
-  const frame = () => {
-    if (timeFrame === "24h") {
-      console.log(day)
-      return day;
-    } else if (timeFrame === "7d") {
-      return week;
-    } else {
-      return year;
-    }
-  };
+  // const frame = () => {
+  //   if (timeFrame === "24h") {
+  //     console.log(day)
+  //     return day;
+  //   } else if (timeFrame === "7d") {
+  //     return week;
+  //   } else {
+  //     return year;
+  //   }
+  // };
 
   useEffect(() => {
     if (chartRef && chartRef.current && detail) {
@@ -25,8 +27,8 @@ export default function Chart({ data }) {
         data: {
           datasets: [
             {
-              label: "crypto",
-              data: frame(),
+              label: "Annual performance",
+              data: year,
               backgroundColor: "gold",
               borderColor: "orange",
               pointRadius: "1",
@@ -44,6 +46,7 @@ export default function Chart({ data }) {
 
   return (
     <div className="chart-container">
+      
       <div>
         <canvas
           ref={chartRef}
@@ -52,10 +55,16 @@ export default function Chart({ data }) {
           height={200}
            >
         </canvas>
-        <button onClick={() => frame('24h')}>Day</button>
-        <button onClick={() => frame('7d')}>Week</button>
-        <button onClick={() => frame('1y')}>Year</button>
+      
       </div>
+
     </div>
   );
 }
+
+/*
+
+<button onClick={() => frame('24h')}>Day</button>
+<button onClick={() => frame('7d')}>Week</button>
+<button onClick={() => frame('1y')}>Year</button>
+*/
