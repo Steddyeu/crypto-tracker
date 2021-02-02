@@ -14,4 +14,11 @@ Within the next week i intend to add a newsfeed to the page where in conjunction
 I have also added a link to my node.js project cowellereum in which i make my own (very very basic) cryptocurrency.
 
 # Planned improvements 
-Top movers table. Trending news feed. List of crypto events, filtered down to local area. Charts showing performance grpahs of each coin. 
+* I am currently making an api to implement on the backend of this project. 
+* On this backend there will be a blog. 
+* User accounts
+* Top movers table
+* coin watchlist. 
+* Further info table on my indiviaul coin page. 
+
+I
