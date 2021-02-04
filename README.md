@@ -1,4 +1,7 @@
 # Eds Cryptorium
+
+Link to hosted site: https://edscryptorium.netlify.app/ 
+
 cd into crypto-tracker and run the command ```npm-start``` run command: ```npm install axios``` in terminal.
 
 # This project
